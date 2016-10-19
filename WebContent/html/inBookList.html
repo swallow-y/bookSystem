@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>入库记录</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/jquery.js"></script>
+
+<script src="../js/inbookList.js"></script>
+</head>
+<body onpageshow="inBookList()">
+
+		<table border='1' id='table' position=absolute align=center cellspacing='0px' style='margin-left: 0px;'>
+		<tr class='thfix'>
+		<td>时间</td><td>作者</td><td>书名</td><td>编码</td>
+		<td>数目</td><td>价格</td>
+		</tr>
+		
+			</table>
+					<div id="list"   >
+			
+		</div>
+		<br/><br/>
+		
+		<input type="button"  value="首页" onclick="firstPage()"/>
+		<input type="button" value="上一页" onclick="prePage()"/>
+		<input type="button" value="下一页" onclick="nextPage()"/>
+				<input type="button" value="尾页" onclick="lastPage()"/>
+		
+        /第 
+        <input type="text" id="pageno" value="1" style="width: 44px"/>页/<input type="button" value="跳转" onclick="aimPage()"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <embed width="160" height="70" align="middle" pluginspage="http://www.macromedia.com/go/getflashplayer" 
+        type="application/x-shockwave-flash" allowscriptaccess="always" name="honehoneclock" bgcolor="#ffffff" 
+        quality="high" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock01.swf" wmode="transparent">
+        </div>
+		
+		<br />
+</body>
+</html>

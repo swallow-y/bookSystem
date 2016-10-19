@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>新增图书</title>
+    <link rel="stylesheet" href="../css/style.css" type="text/css" />
+  <script src="../js/jquery.js"></script>
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/book.js"></script>
+</head>
+<script>
+$(document).ready(function() {
+	
+
+	statment = Number(GetQueryString("statment"));
+	if(statment != 0){
+		loadBook();
+		 /* document.getElementById('buttonSub').innerHTML = "<input type='button' id='upload' value='上传图书' onclick='updateBook()' class='submitButton' />"; 
+	    $p1 = $("<input type='button' id='upload' value='上传图书' onclick='updateBook()'  />");
+		$("#buttonSub").append($p1);*/
+	}
+	else{
+		/*document.getElementById("buttonSub").innerHTML = '<input type="button" id="upload" value="上传图书"  class="submitButton" />';*/
+		
+	}
+})
+
+
+function GetQueryString(name) {// 传参，传递行下标
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg);
+	if (r != null)
+		return unescape(r[2]);
+	return null;
+
+}
+</script>
+<body class="AddBookBody">
+
+<div class="container">
+    <div class="imageBox">
+        <div class="thumbBox"></div>
+        <div class="spinner" style="display: none">Loading...</div>
+    </div>
+    <div class="action">
+        <input type="file" id="file" style="float:left; width: 250px">
+        <input type="button" id="btnCrop" value="Crop" style="float: right">
+        <input type="button" id="btnZoomIn" value="+" style="float: right">
+        <input type="button" id="btnZoomOut" value="-" style="float: right">
+        <br/>   <br/>
+      
+      
+        
+    </div>
+    <div class="cropped">
+
+    </div>
+</div>
+<div class = "addBook">
+<span class= "bookNameSpan">书名：</span>
+<input type = "text" name="bookName" id= "bookName" class= "bookNameText"/>
+   <span class= "authorSpan">作者：</span>
+<input type = "text" name="author" id= "author" class= "authorText"/>
+<span class='bookISNSpan'>编码：</span>
+<input type = "text" name="bookISN" id= "bookISN" class= "bookISNText"/>
+<span class= "bookPriceSpan">价格：</span>
+<input type = "text" name="bookPrice" id= "bookPrice" class= "bookPriceText"/>
+<span class= "bookStoreSpan">总数：</span>
+<input type = "text" name="bookStore" id= "bookStore" class= "bookStoreText"/>
+<label class= "bookTypeSpan">类型：</label>
+   <select class = "bookTypeBox" id="bookTypeBox">
+      <option value="文艺" selected="selected">文艺</option>
+      <option value="经管">经管</option>
+      <option value="生活">生活</option>
+      <option value="教育">教育</option>
+      <option value="科技">科技</option>
+      <option value="童书">童书</option>
+   </select>
+
+<span class= "bookDescriptSpan">描述：</span>
+<textarea cols="50" rows="3" name="bookDescript" id= "bookDescript" class= "bookDescriptText"></textarea>
+  <div id="buttonSub">
+  <input type="button" id="upload" value="上传图书"  class="submitButton" /> </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>登陆页面</title>
+<link type="text/css" rel="stylesheet" href="../css/login.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.2.1.min.js"></script>
+
+<script src="../js/bookSystem.js"></script>
+<script src="../js/user.js"></script>
+
+</head>
+<body>
+
+
+<div class="go">
+<a href="../html/Customer.html"><span>让知识像燕子一般穿梭---swallow的图书库</span></a>
+
+</div>
+<div class="navigation">
+<a href="../html/allBookList.html">
+<img src="../image/book10.jpg" class="loginBackImage">
+</a>
+<span class="name">用户名：</span>
+<input type="text" placeholder="用户名/手机电话/邮箱" class="nameText" id="name">
+<span class="password">密码：</span>
+<input type="password" placeholder="密码" class="passwordText" id="password">
+<span class="forgetPassword">忘记密码</span>
+<input type="submit" value="登录" class="submitButton" onclick="test()">
+<span class="newUser"><a href="initall.html">立即注册</a></span>
+
+<div>
+<table>  
+    <tr>  
+        <td><input type="text" id="inputRandom" placeholder="请输入验证码" class="createText" ></td>  
+        <td class="createCode"><label id="autoRandom" value="" class="code"></label>&nbsp;<INPUT TYPE="button" VALUE="获取验证码" ONCLICK="autoRandom.innerHTML=createCode()"></td>  
+    </tr>  
+  
+</table> 
+<script type="text/javascript">  
+    window.onload()=autoRandom.innerHTML=createCode();  
+</script> 
+<!-- 分享   -->
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&img=0&pos=right&uid=11824" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+var bds_config = {"bdTop":155};
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+</script>
+<!-- Baidu Button END -->
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=slide&img=6&pos=left&uid=15177" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+var bds_config = {"bdTop":15};
+document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + new Date().getHours();
+</script>
+<!-- Baidu Button END -->
+</div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户界面</title>
+<script src="../js/jquery.js"></script>
+<script src="../js/bookSystem.js"></script>
+<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<link rel="stylesheet" href="../css/bookSystem.css" type="text/css" />
+<link rel="stylesheet" href="../bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" type="text/css" />
+</head>
+<script>
+
+$(document).ready(function(){
+	$.ajax({
+		url: "/bookSystem/servlet/BookServlet",
+		type:"post",
+		data:{"method":"showUser"},
+		success:function(data){
+			alert(data);
+			$(".welcome")[0].innerHTML=data+"欢迎您！";
+		},
+		error:function(data){
+		}
+	})
+})
+</script>
+<body>
+<br/><br/>
+<div>
+<div class = "nav" id="navGlobal">
+<p style="margin: -1px 33px -17px 120px;"  class="welcome">欢迎登录<a href="initall.html">.注册</a><a href="login.html">.登录</a></p>
+
+	<span class="firstSpanMana">swallow的图书管理系统</span>
+	<p><a href="login.html?com=logout">.退出</a></p>
+	</div>
+<div class="title">
+		<div class="public_headersearch_module" name="头部搜索">
+			<div class="clearfix" style='width: 1075px;'>
+				<a href="http://www.dangdang.com" class="logo"> <img
+					src="../image/6.jpg" width="269px" height="45px" />
+				</a>
+				<div class="search">
+					<input type="text" placeholder="作品、作者、出版社" class="searchtext" id='SerchIn'>
+					<input type="button" value="提交" class="searchbtn" onclick='serchIn()' />
+			</div>
+				<ul class="header_fun clearfix">
+					<li class="header_cart"><a
+						href="javascript:void(0);" onclick="myCart()"> <i class="glyphicon glyphicon-shopping-cart"></i>
+							购物车 <b id="cart_items_count"></b>
+					</a></li>
+					<li class="header_order"><a href="javascript:void(0)" onclick="myOrder()"
+						id="headerMyOrder"> <i class="glyphicon glyphicon-th-list"></i> 订单
+					</a></li>
+					<li class="header_my"><a href="javascript:void(0)"
+						id="readingCenterBtn"> <i class="icon"></i> 个人中心
+					</a></li>
+				</ul>
+			</div>
+			
+		</div>
+</div>
+</div>
+<br/><br/>
+<div>
+<div id="firstpane" class="menu_list">
+            <h3 class="menu_head current" onclick="changeHtml()"><a href="#?type=wy" onclick="changeHtml()">文艺</a></h3>
+			<div style="display: block" class="menu_body">
+				<a href="#?type=xs" >小说</a> <a href="#?type=ws" onclick="changeHtml()">文学</a> <a href="#?type=qc">青春</a> <a
+					href="#?type=dm">动漫</a> <a href="#?type=ys">艺术</a> <a href="#?type=zj">传记</a>
+			</div>
+
+			<h3 class="menu_head"><a href="#?type=jg"onclick="changeHtml()">经管</a></h3>
+			<div style="display: none" class="menu_body">
+				<a href="#">成功</a> <a href="#">管理</a> <a href="#">经济</a> <a
+					href="#">投资</a> 
+			</div>
+
+			<h3 class="menu_head"><a href="#?type=sk"onclick="changeHtml()">社科</a></h3>
+			<div style="display: none" class="menu_body">
+				<a href="#">文化</a> <a href="#">社会科学</a> <a href="#">法律</a>
+				<a href="#">历史</a> <a href="#">古籍</a>
+			</div>
+
+			<h3 class="menu_head" ><a href="#?type=jy" onclick="changeHtml()">教育</a></h3>
+			<div style="display: none" class="menu_body">
+				<a href="#">体育人文社会学</a> <a href="#">体育教育训练学</a> <a href="#">民族传统体育学</a>
+				<a href="#">发展与教育心理学</a> <a href="#">应用心理学</a> <a href="#">教育学原理</a>
+				<a href="#">课程与教学论</a> <a href="#">比较教育学</a>
+			</div>
+
+			<h3 class="menu_head"><a href="#?type=sh" onclick="changeHtml()">生活</a></h3>
+			<div style="display: none" class="menu_body">
+				<a href="#">一般力学与力学基础</a> <a href="#">固体力学</a> <a href="#">流体力学</a>
+				<a href="#">工程力学</a> <a href="#">机械制造及其自动化</a> <a href="#">机械电子工程</a>
+			</div>
+			<h3 class="menu_head"><a href="#?type=ts" onclick="changeHtml()">童书</a></h3>
+			<div style="display: none" class="menu_body">
+				<a href="#">一般力学与力学基础</a> <a href="#">固体力学</a> <a href="#">流体力学</a>
+				<a href="#">工程力学</a> <a href="#">机械制造及其自动化</a> <a href="#">机械电子工程</a>
+			</div>
+		
+		</div>
+		</div>
+		<div>
+		<iframe src="serchBook.html?serch" class="iframeShow" scrolling="yes" id="iframe"></iframe>
+			</div>
+</body>
+</html>

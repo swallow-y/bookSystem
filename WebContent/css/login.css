@@ -1,0 +1,214 @@
+@CHARSET "UTF-8";
+body{
+	background-color:#f0f0f0;
+}
+.nav{
+    background: #fff;
+    width: 700px;
+    height: 335px;
+    background-color: #e4e3e3;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 53px;
+    margin-booton: 60px;
+    border: 1px solid #eef2f4;
+    box-shadow: 0px 1px 2px #eee;
+
+    }
+.go{
+    position: absolute;
+    margin-left: 165px;
+    margin-top: 31px;
+    width: 926px;
+    height: 49px;
+}
+.firstSentence{
+	padding:10px 10px;
+	position:absolute;
+	margin-left:-8px;
+	margin-top:-3px;
+	font-size:20px;
+}
+
+
+.navigation{
+    background: #fff;
+    width: 857px;
+    height: 347px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 80px;
+    border: 1px solid #eef2f4;
+    box-shadow: 0px 1px 2px #eee;
+}
+.loginBackImage{
+	  padding:-1px 6px;
+	  width:457px;
+	  height:324px;
+	      margin-left: 12px;
+    margin-top: 10px;
+}
+.name{
+    position:absolute;
+	margin-left:0px;
+	margin-top:24px;
+	color:#800000;
+	font-family:"微软雅黑";
+	font-size:20px;
+}
+.nameText{
+    position:absolute;
+	height:20px;
+	width:270px;
+	margin-left:89px;
+	margin-top:24px;
+	color:#800000;
+	font-family:"宋体";
+	font-size:20px;
+}
+.password{
+    position:absolute;
+	margin-left:0px;
+	margin-top:86px;
+	color:#800000;
+	font-family:"微软雅黑";
+	font-size:20px;
+}
+.passwordText{
+    position:absolute;
+	height:20px;
+	width:270px;
+	margin-left:89px;
+	margin-top:86px;
+	color:#800000;
+	font-family:"宋体";
+	font-size:20px;
+}
+.createCode{
+	position: absolute;
+    height: 20px;
+    width: 270px;
+    margin-left: 680px;
+    margin-top: -182px;
+}
+
+.createText{
+	position:absolute;
+	margin-left:558px;
+	margin-top:-182px;
+	height:25px;
+	width:100px;
+	color:#800000;
+	font-size:16px;
+}
+.code{
+	font-size:23px;
+	color:#800000;
+	font-family:bold;
+
+}
+.inputCode{
+	position:absolute;
+	margin-left:555px;
+	margin-top:-136px;
+	height:25px;
+	width:100px;
+}
+.forgetPassword{
+  position:absolute;
+	height:20px;
+	width:270px;
+	margin-left:290px;
+	margin-top:196px;
+}
+.submitButton{
+	 position:absolute;
+	height:40px;
+	width:270px;
+	margin-left:89px;
+	margin-top:237px;
+	color:#000000;
+	background-color:#53b748;
+	font-family:"宋体";
+	font-size:22px;
+	border-top-left-radius:5px;
+		border-top-right-radius:5px;
+		border-bottom-left-radius:5px;
+		border-bottom-right-radius:5px;
+}
+
+.newUser{
+	 position:absolute;
+	height:20px;
+	width:270px;
+	margin-left:290px;
+	margin-top:292px;
+}
+.telSpan{
+	    position: relative;
+    height: 27px;
+    width: 270px;
+    padding-left: 100px;
+    padding-top: 80px;
+    top:10px;
+    color: #000000;
+    font-family: "宋体";
+    font-size: 22px;
+
+}
+
+
+.ensurePassSpan{
+    position: relative;
+    height: 27px;
+    width: 270px;
+    margin-left: 164px;
+    top: 10px;
+    margin-top: 161px;
+    color: #000000;
+    font-family: "宋体";
+    font-size: 20px;
+}
+
+.initSubmit {
+    position: absolute;
+    height: 40px;
+    width: 206px;
+    margin-left: -241px;
+    margin-top: 110px;
+    color: #000000;
+    background-color: #53b748;
+    font-family: "宋体";
+    font-size: 22px;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    border-bottom-right-radius: 19px;
+}
+.span{
+	position: relative;
+    /* height: 43px; */
+    /* width: 270px; */
+    /* padding-left: 151px; */
+    /* padding-top: 32px; */
+    margin-left: 200px;
+    margin-top: 159px;
+    top: 10px;
+    color: #000000;
+    font-family: "宋体";
+    font-size: 22px;
+}
+.text {
+          position: relative;
+    height: 35px;
+    width: 268px;
+    margin-left: 0px;
+    margin-top: 10px;
+    top: 10px;
+    color: #000001;
+    font-family: "宋体";
+    font-size: 20px;
+    }

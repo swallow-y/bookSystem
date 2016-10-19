@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>管理员界面</title>
+<script src="../js/jquery.js"></script>
+<script src="../js/bookSystem.js"></script>
+<link rel="stylesheet" href="../css/bookSystem.css" type="text/css" />
+<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="../bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" type="text/css" />
+</head>
+<body>
+<br/><br/>
+<div>
+
+<span class="firstSpanMana">swallow的图书管理系统</span>
+</div>
+<br/><br/>
+<div>
+<div id="firstpane" class="menu_list">
+
+			<h3 class="menu_head current"><i class="glyphicon glyphicon-user"></i>个人中心</h3>
+			<div style="display: block" class="menu_body">
+				<a href="#">个人信息</a> <a href="#">个人账户</a> 
+			</div>
+
+			<h3 class="menu_head"><i class="glyphicon glyphicon-home"></i>
+			图书管理</h3>
+			
+			<div style="display: none" class="menu_body">
+				<a href="#" onclick="saveBook()">新增图书</a> <a href="#">图书下架</a> <a href="#">信息修改</a>
+				<a href="#" onclick="findBook()">显示图书</a>
+			</div>
+
+			<h3 class="menu_head"><i class="glyphicon glyphicon-export"></i>出库管理</h3>
+			<div style="display: none" class="menu_body">
+				<a href="#">消息通知</a> <a href="#"  onclick="OrderList()">订单显示</a> <a href="#">用户信息</a>
+				<a href="#">总价</a>
+			</div>
+
+             <h3 class="menu_head"><i class="glyphicon glyphicon-import"></i>入库管理</h3>
+			<div style="display: none" class="menu_body">
+				<a href="#" onclick="saveBook()">新增图书</a><a href="#" onclick="inBookList()">入库记录</a>  <a href="#">总价</a> 
+			</div>
+		</div>
+		</div>
+		<div>
+		<iframe src="BookList.html" class="iframeShow" scrolling="no" id="iframe"></iframe>
+			</div>
+</body>
+</html>

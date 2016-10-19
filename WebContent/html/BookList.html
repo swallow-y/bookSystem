@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>图书列表</title>
+<link type="text/css" rel="stylesheet" href="../css/style.css">
+<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="../js/jquery.js"></script>
+
+<script src="../js/book.js"></script>
+
+</head>
+<body  onpageshow="booksShow()" href="#?find=1">
+<div>
+		<br/>
+		<select id="check1" name="check1">
+			<option value="bookISN">编号</option>
+			<option value="bookName">书名</option>
+			<option value="bookPrice">价格</option>
+			<option value="bookType">类型</option>
+		</select> 
+		<input type="text" name="text" placeholder="请输入相应信息" id="text">
+		<button type="button" name="查询" value="查询" onclick="findByCondition()" href="#?find=2">查询</button>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<span>图书信息一览表</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+
+	</div>
+
+<form method="post">
+
+		<div id="list"  style="width: 798px; height: 491px;  overflow-x:hidden;" >
+			<table border='1' id='table' >
+		<tr>
+		<td>&nbsp;书名&nbsp;</td><td>&nbsp;编号&nbsp;</td><td>&nbsp;类型&nbsp;</td><td>余量</td>
+		<td>&nbsp;价格&nbsp;</td><td>&nbsp;图片&nbsp;</td><td>&nbsp;操作&nbsp;</td>
+		</tr>
+		
+			</table>
+		</div>
+		<br/><br/>
+		
+		<input type="button"  value="首页" onclick="firstPage()"/>
+		<input type="button" value="上一页" onclick="prePage()"/>
+		<input type="button" value="下一页" onclick="nextPage()"/>
+				<input type="button" value="尾页" onclick="lastPage()"/>
+		
+        /第 
+        <input type="text" id="pageno" value="1" style="width: 44px"/>页/<input type="button" value="跳转" onclick="aimPage()"/>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <embed width="160" height="70" align="middle" pluginspage="http://www.macromedia.com/go/getflashplayer" 
+        type="application/x-shockwave-flash" allowscriptaccess="always" name="honehoneclock" bgcolor="#ffffff" 
+        quality="high" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock01.swf" wmode="transparent">
+        </div>
+		
+		<br />
+</form>
+</body>
+</html>

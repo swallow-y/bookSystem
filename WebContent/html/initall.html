@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>用户注册页面</title>
+<link type="text/css" rel="stylesheet" href="../css/login.css">
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.2.1.min.js"></script>
+
+<script src="../js/user.js"></script>
+<link rel="stylesheet" href="../css/font-awesome.min.css" type="text/css" />
+<link rel="stylesheet" href="../bootstrap-3.3.0-dist/dist/css/bootstrap.min.css" type="text/css" />
+</head>
+<body>
+<div class="nav">
+<span class="telSpan">电话号码/邮箱</span>
+<input type="text" class="text" id="userTel"/>
+<span class="span">姓名</span>
+<input type="text" class="text" id="userName"/>
+<span class="span">密码</span>
+<input type="password" class="text" onpaste="return false" maxlength="20" id="password"/>
+<span class="ensurePassSpan">确认密码</span>
+<input type="password" class="text" onpaste="return false" maxlength="20" id="ensurePass"/>
+<input type="button" class="initSubmit" value="立即注册" onclick="newUser()"/>
+</div>
+</body>
+</html>
